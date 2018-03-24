@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Create User</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body>
+  <div>
+    <h1>Create User</h1>
+    <hr>
+    
+    <form action="create_user.html" method="get" enctype="application/x-www-form-urlencoded" >
+    
+        <label>Username:</label>
+        <input type="text" name="username" placeholder="username" size="30" maxlength="12" pattern="^[a-zA-Z]+$" required >
+        <br><br>
+        <label>Password:</label>
+        <input type="text" name="password" placeholder="password" size="30" maxlength="8" attern="\d+" required >
+       <br> 
+       <br>
+       <br>
+        <label>
+         Select your favourite superheros:
+         <br><input type="radio" name="superheros" value="Superman" checked="checked"> Superman <br>
+         <input type="radio" name="superheros" value="Batman"> Batman<br>
+         <input type="radio" name="superheros" value="Wonder Woman" checked="checked"> Wonder Woman<br>
+         <input type="radio" name="superheros" value="Thor & Hulk" checked="checked"> Thor & Hulk<br>
+         <input type="hidden" name="user-id" value="2300" >
+        </label>
+       <br> <Label>Select your Birthday<input type="date" name="birthday" /></Label>
+       <br> <br><label> Enter your Email: <input type="email" name="email" /></form><label>
+       <br><br> <input type="url" name="sitiopersonal" />
+       <br> <br><input type="image" name="login" src="register_button.png"> 
+
+    </form>
+    <div>
+    <form>
+           <label> Search more:<input action="https://www.google.ca/search" type="search" name="q" />
+           </label>
+    </form>
+  </div>
+  </div>
+</body>
+</html>

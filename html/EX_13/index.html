@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Create User</title>
+</head>
+<body>
+  <div>
+    <h1>Create User</h1>
+    <hr>
+    <form action="login.html" method="get" enctype="application/x-www-form-urlencoded" >
+      <label>Name:
+       <input type="text" name="name" placeholder="name"/></label>
+       <label> Favorite Movie:
+        <select name="Movies" multiple="multiple" size="4">
+        <option value="Deadpool">Deadpool</option>
+        <option value="batman_vs_superman">batman superman</option>
+        <option value="civil_war">civil war</option>
+        <option value="doctor_strange">doctor strange</option>
+        <option value="suicide_squad">suicide squad</option>
+        <option value="wonder_woman" selected>wonder woman</option>
+      </select>
+      </label>
+      <label>Bio<textarea name="about" cols="10" rows="2" >Write Bio here.</textarea> </label>
+      <label>Upload more movies here..<input type="file" name="filename" multiple /></label>
+      <button value="clearform" name="clearform">Clear Form</button>
+      <button value="addnewuser" name="addnewuser">Add New User</button>
+  </form>
+  </div>
+</body>
+</html>
